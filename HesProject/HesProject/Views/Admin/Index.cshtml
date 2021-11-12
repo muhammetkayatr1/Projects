@@ -1,0 +1,128 @@
+﻿@using NonFactors.Mvc.Grid
+@using HesProject.Models
+
+
+@{
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+}
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Genel Bilgiler
+                    </h3>
+                </div>
+                @*<div class="card-toolbar">
+                    <a asp-action="" style="background-color: #3699ff; border-color: #3699ff;" class="btn btn-info font-weight-bolder font-size-sm mr-3">Excel</a>
+                </div>*@
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 14-->
+                        <a asp-action="GetAllEmployee" asp-controller="Uyumsoft" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-primary font-weight-bolder font-size-h5 mb-2 mt-5">PERSONEL BİLGİLERİ GETİR</div>
+                                <div class="font-weight-bold text-inverse-primary font-size-sm">@ViewBag.HesResult</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 14-->
+                    </div>
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="GetAllHes" asp-controller="Proliz" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">HES KODLARINI GETİR</div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">@ViewBag.ResultHes</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="GetStudent" asp-controller="Proliz" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">ÖĞRENCİ BİLGİLERİNİ GETİR</div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">@ViewBag.StudentResult</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 13-->
+                        <a asp-action="GetAllAcademician" asp-controller="Proliz" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-danger font-weight-bolder font-size-h5 mb-2 mt-5">AKADEMİSYEN BİLGİLERİNİ GETİR</div>
+                                <div class="font-weight-bold text-inverse-danger font-size-sm">@ViewBag.AcademicianResul</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 13-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 14-->
+                        <a asp-action="HesCodesSearch" asp-controller="CheckHesCodes" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-primary font-weight-bolder font-size-h5 mb-2 mt-5">HES KODU SORGULA</div>
+                                <div class="font-weight-bold text-inverse-primary font-size-sm">@ViewBag.HesResult</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 14-->
+                    </div>
+
+
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="GateOperation" asp-controller="Konfides" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">KARA LİSTE EKLE/ÇIKAR</div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">@ViewBag.ResultKonfides</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                    <div class="col-xl-3">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="CardData" asp-controller="Konfides" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">Kart Bilgileri Getir</div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">@ViewBag.ResultKonfides</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                </div>
+
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>

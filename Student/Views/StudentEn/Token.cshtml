@@ -1,0 +1,53 @@
+﻿@model Token
+
+@{
+    Layout = "~/Views/Shared/_TokenLayoutEn.cshtml";
+}
+<div class="d-flex flex-column flex-root">
+    <!--begin::Login-->
+    <div class="login login-4 login-signin-on d-flex flex-row-fluid" id="kt_login">
+        <div class="d-flex flex-center flex-row-fluid bgi-size-cover bgi-position-top bgi-no-repeat">
+            <div class="login-form text-center p-7 position-relative overflow-hidden">
+                <!--begin::Login Header-->
+                <div class="d-flex flex-center mb-15">
+                    <a href="https://halic.edu.tr">
+                        <img src="~/haliclogoyeni.png" class="max-h-175px" alt="" />
+                    </a>
+                </div>
+                <!--end::Login Header-->
+                <!--begin::Login Sign in form-->
+                <div class="login-signin">
+                    <div class="mb-20">
+                        <h3>Haliç University</h3>
+                        <h3>Self-Service Platform</h3>
+                    </div>
+                    <h1 style="font-size: 1em; color:red; text-align:center">@ViewBag.loginError</h1>
+                    <form class="form fv-plugins-bootstrap fv-plugins-framework" action="@Url.Action("StudentInfo", "StudentEn")" method="POST">
+                        <div class="form-group mb-5 fv-plugins-icon-container">
+                            <input class="form-control h-auto form-control-solid py-4 px-8" type="text" placeholder="Your citizenship/T.C. number" name="tc" autocomplete="off">
+                            <div class="fv-plugins-message-container"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Login</button>
+                        <input type="hidden"><div></div>
+                    </form>
+                </div>
+                <!--end::Login Sign in form-->
+                <!--begin::Login Sign up form-->
+                <!--end::Login Sign up form-->
+                <!--begin::Login forgot password form-->
+                <!--end::Login forgot password form-->
+            </div>
+            <a id="lang" asp-action="Token" asp-controller="Student" class="lang"><i class="fas fa-globe lang-icon"></i> TR</a>
+        </div>
+    </div>
+    <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <div class="text-dark order-2 order-md-1">
+                <span class="text-muted font-weight-bold mr-2">2021©</span>
+                <a href="https://halic.edu.tr" target="_blank" class="text-dark-75 text-hover-primary">Haliç University IT Department</a>
+            </div>
+        </div>
+    </div>
+    <!--end::Login-->
+</div>
+

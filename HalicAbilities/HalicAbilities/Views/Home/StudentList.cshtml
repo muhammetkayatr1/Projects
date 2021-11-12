@@ -1,0 +1,182 @@
+﻿@using NonFactors.Mvc.Grid
+@using HalicAbilities.Models
+
+@model IGrid<View_HalicinYetenekleri_FormBuilder>
+
+@{
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+
+<div class="modal fade" id="modalGrup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 125px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="Title" class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div style="padding: 0px 30px; overflow-x: auto">
+                <div class="form-group row">
+                    <div class="col-lg-4">
+                        <label>Bölüm 1</label>
+                        <input type="text" disabled class="form-control" id="Bolum1">
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Bölüm 2</label>
+                        <input type="text" disabled class="form-control" id="Bolum2">
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Bölüm 3</label>
+                        <input type="text" disabled class="form-control" id="Bolum3">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-6">
+                        <label>Yabancı Dil</label>
+                        <input type="text" disabled class="form-control" id="YabanciDil">
+                    </div>
+                    <div class="col-lg-6">
+                        <label>Başvuru Tipi</label>
+                        <input type="text" disabled class="form-control" id="BasvuruTipi">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-2 col-form-label">Hakkında</label>
+                    <div class="col-12">
+                        <textarea rows="7" disabled style="height:100%" type="text" class="form-control" id="Hakkimda"></textarea>
+                    </div>
+                    <label class="col-2 col-form-label">Yetenekler</label>
+                    <div class="col-12">
+                        <textarea rows="7" disabled style="height:100%" type="text" class="form-control" id="Yeteneklerim"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tamam</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Öğrenci Listesi
+                    </h3>
+                </div>
+                <div class="card-toolbar">
+                    <a asp-action="ExcelAbilities" style="background-color: #3699ff; border-color: #3699ff;" class="btn btn-info font-weight-bolder font-size-sm mr-3">Excel</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <!--<div class="row">
+                    <div class="col-xl-4">-->
+                <!--begin::Stats Widget 15-->
+                <!--<a asp-action="StudentList" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">-->
+                <!--begin::Body-->
+                <!--<div class="card-body">
+                    <div class="text-inverse-primary font-weight-bolder font-size-h5 mb-2 mt-5">@ViewBag.Users</div>
+                    <div class="font-weight-bold text-inverse-primary font-size-sm">Başvurusunu Tamamlayan Öğrenci Sayısı</div>
+
+                </div>-->
+                <!--end::Body-->
+                <!--</a>-->
+                <!--end::Stats Widget 15-->
+                <!--</div>
+                <div class="col-xl-4">-->
+                <!--begin::Stats Widget 13-->
+                <!--<a asp-action="NotOrder" class="card card-custom bg-danger bg-hover-state-danger card-stretch gutter-b">-->
+                <!--begin::Body-->
+                <!--<div class="card-body">
+                    <div class="text-inverse-danger font-weight-bolder font-size-h5 mb-2 mt-5">@ViewBag.NotOrder</div>
+                    <div class="font-weight-bold text-inverse-danger font-size-sm">Ödeme Yapmayan Öğrenci Sayısı</div>
+                </div>-->
+                <!--end::Body-->
+                <!--</a>-->
+                <!--end::Stats Widget 13-->
+                <!--</div>
+                <div class="col-xl-4">-->
+                <!--begin::Stats Widget 14-->
+                <!--<a asp-action="NotApply" class="card card-custom bg-primary bg-hover-state-primary card-stretch gutter-b">-->
+                <!--begin::Body-->
+                <!--<div class="card-body">
+                    <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">@ViewBag.NotApply</div>
+                    <div class="font-weight-bold text-inverse-success font-size-sm">Başvuru Yapmayan Öğrenci Sayısı</div>
+                </div>-->
+                <!--end::Body-->
+                <!--</a>-->
+                <!--end::Stats Widget 14-->
+                <!--</div>
+                </div>-->
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                @(new HtmlGrid<View_HalicinYetenekleri_FormBuilder>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+
+
+@section scripts
+
+{
+
+    <script>
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var ID = e.currentTarget.dataset["aday"];
+
+            $.ajax({
+                async: false,
+                method: "GET",
+                dataType: "json",
+                url: "halicinyetenekleri/Home/GetData",
+                data: { ID: ID }
+            }).done(function (resp) {
+                rowData = resp;
+                document.getElementById("Hakkimda").innerHTML = rowData.hakkimda;
+                document.getElementById("Yeteneklerim").innerHTML = rowData.yeteneklerim;
+
+                document.getElementById("Title").innerHTML = rowData.ad_Soyad;
+                document.getElementById("Bolum1").value = rowData.bolum1;
+                document.getElementById("Bolum2").value = rowData.bolum2;
+                document.getElementById("Bolum3").value = rowData.bolum3;
+                document.getElementById("YabanciDil").value = rowData.yabanciDil;
+                document.getElementById("BasvuruTipi").value = rowData.basvuru_Tipi;
+            })
+
+        });
+
+
+    </script>
+
+}

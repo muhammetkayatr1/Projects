@@ -1,0 +1,39 @@
+﻿@using NonFactors.Mvc.Grid
+@using SemBasvuru.Models
+
+@model IGrid<Student>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section>
+    <div class="rad-body-wrapper rad-nav-min">
+        <div class="container-fluid">
+            <header class="rad-page-title">
+                <span style="display: inline-block">Öğrenciler</span>
+                <a style="float:right; background-color:blue" asp-action="Excel" class="btn btn-primary">Excel</a>
+            </header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rad-info-box rad-txt-success">
+                        @(new HtmlGrid<Student>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

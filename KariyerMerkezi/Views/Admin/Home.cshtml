@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<section>
+    <div class="rad-body-wrapper rad-nav-min">
+        <div class="container-fluid">
+            <header class="rad-page-title">
+                <span>Dashboard</span>
+            </header>
+            <div class="row">
+                <div class="counter-box">
+                    <div class="rad-info-box rad-txt-primary">
+                        <i style="color: #3b79e9" class="fas fa-globe icon-design"></i>
+                        <span style="text-transform: none" class="heading">Etkinlik Sayısı</span>
+                        <span class="value"><span>@ViewBag.etkinlikSayisi</span></span>
+                    </div>
+                </div>
+                <div class="counter-box">
+                    <div class="rad-info-box rad-txt-primary">
+                        <i style="color: #3b79e9" class="fas fa-users icon-design"></i>
+                        <span style="text-transform: none" class="heading">Başvuru Sayısı</span>
+                        <span class="value"><span>@ViewBag.basvuruSayisi</span></span>
+                    </div>
+                </div>
+                <div class="counter-box">
+                    <div class="rad-info-box rad-txt-primary">
+                        <i style="color: #23AE89" class="fas fa-globe icon-design"></i>
+                        <span style="text-transform: none" class="heading">Aktif Etkinlik</span>
+                        <span class="value"><span>@ViewBag.aktifEtkinlik</span></span>
+                    </div>
+                </div>
+                <div class="counter-box">
+                    <div class="rad-info-box rad-txt-primary">
+                        <i style="color: #E94B3B" class="fas fa-globe icon-design"></i>
+                        <span style="text-transform: none" class="heading">Pasif Etkinlik</span>
+                        <span class="value"><span>@ViewBag.pasifEtkinlik</span></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

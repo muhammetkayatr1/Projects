@@ -1,0 +1,16 @@
+﻿{
+  "ExtendedData": {
+    "inputs": [
+      "https://obs.halic.edu.tr/proliz_miner/proliz_data_miner.asmx"
+    ],
+    "collectionTypes": [
+      "System.Collections.Generic.Dictionary`2",
+      "System.Collections.Generic.List`1"
+    ],
+    "namespaceMappings": [
+      "*, ProlizWebService"
+    ],
+    "targetFramework": "netcoreapp2.1",
+    "typeReuseMode": "None"
+  }
+}

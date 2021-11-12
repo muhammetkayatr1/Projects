@@ -1,0 +1,4 @@
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Debug\netcoreapp2.1\HesOperation.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Debug\netcoreapp2.1\HesOperation.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Debug\netcoreapp2.1\HesOperation.AssemblyInfo.cs
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Debug\netcoreapp2.1\HesOperation.csproj.CoreCompileInputs.cache

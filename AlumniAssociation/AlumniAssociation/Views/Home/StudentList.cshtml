@@ -1,0 +1,51 @@
+﻿@using NonFactors.Mvc.Grid
+@using AlumniAssociation.Models
+
+@model IGrid<View_MezunlarDernegi_FormBuilder>
+
+@{
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+
+
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Öğrenci Listesi
+                    </h3>
+                </div>
+                <div class="card-toolbar">
+                    <a asp-action="Excel" style="background-color: #3699ff; border-color: #3699ff;" class="btn btn-info font-weight-bolder font-size-sm mr-3">Excel</a>
+                </div>
+            </div>
+            <div class="card-body">
+                @(new HtmlGrid<View_MezunlarDernegi_FormBuilder>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+
+

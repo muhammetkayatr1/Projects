@@ -1,0 +1,42 @@
+
+
+.img-size {
+}
+
+.icon-size {
+}
+
+.sec-pad {
+}
+
+.feat-mar {
+}
+
+.h-style {
+    color: black !important;
+    font-family: Poppins, Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 25px !important
+}
+
+@media(max-width: 470px) {
+    .img-size {
+        width: 120px !important;
+        height: 120px !important
+    }
+    .icon-size {
+        font-size: 50px !important
+    }
+    .h-style {
+        color: black !important;
+        font-family: Poppins, Helvetica, Arial, sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 18px !important
+    }
+    .sec-pad {
+        padding: 5px !important;
+    }
+    .feat-mar {
+        margin-bottom: 25px !important;
+    }
+}

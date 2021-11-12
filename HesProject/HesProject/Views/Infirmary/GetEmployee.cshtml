@@ -1,0 +1,172 @@
+﻿
+@model HesProject.Models.ViewModels.EmployeeViewModel
+
+@{
+    Layout = "~/Views/Infirmary/_InfirmaryLayout.cshtml";
+}
+
+
+<div class="d-flex flex-column-fluid" style="display:block !important">
+
+    <!--begin::Entry-->
+    <!--begin::Hero-->
+    
+
+    <!--end::Hero-->
+    <!--begin::Section-->
+    <div class="container py-8">
+        <div class="row">
+            <div class="col-lg-10 mb-4" style="margin: auto">
+                <!--begin::Callout-->
+                <div class="card card-custom wave wave-animate-slow wave-success mb-8 mb-lg-0" style="background-color: white !important; height: 100%">
+                    <div class="card-body" style="">
+                        <h3 style="text-align: center;">
+                            Personel Sorgulama
+                        </h3>
+                        <div class="d-flex align-items-center p-6" style="padding: 2rem 2.25rem !important;">
+                            <!--begin::Icon-->
+
+                            <div class="d-flex flex-column col-lg-6" style="margin:auto">
+                                <form action="@Url.Action("GetEmployee", "Infirmary")" method="POST">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" autocomplete="off" name="tc" maxlength="11" placeholder="TC Kimlik Numarası">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">Sorgula</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--end::Content-->
+                        </div>
+                        <h3 style="text-align:center">@ViewBag.Error</h3>
+                        @if (Model != null)
+                        {
+                        @if (Model.ProlizData != null)
+                            {
+                        <div class="text-center mb-10">
+                            <div class="symbol symbol-60 symbol-circle symbol-xl-90">
+                                @if(Model.ProlizData.Picture != null)
+                                    {
+                                <div class="symbol-label" style="background-image: url('@Model.ProlizData.Picture');width: 100px; height: 100px;"></div>
+                                    }
+                                    else
+                                {
+                                <div class="symbol-label" style="background-image: url('../hes/avatar.jpg'); width: 100px; height: 100px;"></div>
+                                }
+                                
+                            </div>
+                            <h4 class="font-weight-bold my-2">@Model.ProlizData.Ad @Model.ProlizData.Soyad</h4>
+                            <div class="text-muted mb-2">@Model.ProlizData.Departman</div>
+                        </div>
+                            }
+                        }
+
+                        @if (Model != null)
+                        {
+                            if (Model.ProlizData != null)
+                            {
+                        <table class="table table-bordered" style="margin: auto; margin-bottom: 20px;">
+
+                            <tbody>
+                                <tr>
+                                    <th style="width:50%" scope="col">Hes Kodu</th>
+                                    @if (Model.ProlizData.HESKOD != null)
+                                            {
+                                    <td style="color: green">@Model.ProlizData.HESKOD</td>
+                                            }
+
+                                            else
+                                            {
+                                    <td style="color:red">@Model.ProlizData.durum</td>
+                                            }
+
+                                </tr>
+                                <tr>
+                                    <th style="width:50%" scope="col">Risk Durumu</th>
+                                    @if (Model.ProlizData.current_health_status == "RISKLESS")
+                                            {
+                                    <td style="color: green">Riskli Değil</td>
+                                            }
+                                            else if (Model.ProlizData.current_health_status == "RISKY")
+                                            {
+                                    <td style="color:red">Riskli</td>
+                                            }
+                                            else
+                                            {
+                                <td style="color:red">@Model.ProlizData.durum</td>
+                                            }
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Aşılı Durumu</th>
+                                    @if (Model.ProlizData.is_vaccinated == true)
+                                            {
+                                    <td style="color:green">Tüm aşıları tamamlanmıştır.</td>
+                                            }
+                                            else if (Model.ProlizData.is_vaccinated == false)
+                                            {
+                                    <td style="color:red">Aşıları tamamlanmamıştır.</td>
+                                            }
+                                            else if (Model.ProlizData.current_health_status != null)
+                                            {
+                                    <td style="color:red">HES Uygulamasından bilgilerinin paylaşılmasına izin verilmemeiştir.</td>
+                                            }
+                                            else
+                                            {
+                                    <td style="color:red">Aşı bilgisi bulunamadı.</td>
+
+                                            }
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">Geçirilmiş Hastalık</th>
+                                    @if (Model.ProlizData.is_immune == true)
+                                            {
+                                    <td style="color:green">Son 6 ayda Covid geçirmiştir.</td>
+                                            }
+                                            else if (Model.ProlizData.is_immune == false)
+                                            {
+                                    <td style="color:red">Son 6 ayda Covid geçirmemiştir.</td>
+                                            }
+                                            else if (Model.ProlizData.current_health_status != null)
+                                            {
+                                    <td style="color:red">HES uygulamasından bilgilerinin paylaşılmasına izin verilmemeiştir.</td>
+                                            }
+                                            else
+                                            {
+                                    <td style="color:red">Hastalık bilgisi bulunamadı.</td>
+                                            }
+                                </tr>
+                                <tr>
+                                    <th scope="col">Son 48 Saat Negatif Test</th>
+                                    @if (Model.ProlizData.last_negative_test_date != null)
+                                            {
+                                    <td style="color:green">@Model.ProlizData.last_negative_test_date</td>
+                                            }
+                                            else if (Model.ProlizData.current_health_status != null)
+                                            {
+                                    <td style="color:red">Son 2 günde PCR testi yaptırmamıştır.</td>
+                                            }
+                                            else
+                                            {
+                                    <td style="color:red">PCR testi bilgisi bulunamadı.</td>
+                                            }
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                            }
+                        }
+                      
+                    </div>
+                </div>
+                <!--end::Callout-->
+            </div>
+        </div>
+    </div>
+    <!--end::Section-->
+    <!--begin::Section-->
+
+</div>

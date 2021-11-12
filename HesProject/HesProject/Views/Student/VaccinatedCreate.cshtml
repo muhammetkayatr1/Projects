@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_PersonLayout.cshtml";
+}
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container">
+        <div class="card card-custom">
+            <div class="card-body p-0">
+                <!--begin: Wizard-->
+                <div class="wizard wizard-2" id="kt_wizard" data-wizard-state="first" data-wizard-clickable="false">
+                    <!--begin: Wizard Nav-->
+                    <!--end: Wizard Nav-->
+                    <!--begin: Wizard Body-->
+                    <div class="wizard-body py-8 px-8 py-lg-20 px-lg-10" style="margin:auto">
+                        <!--begin: Wizard Form-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                @*<form asp-action="VaccinatedCreate" method="POST">*@
+                                <div class="pb-5" data-wizard-type="step-content">
+
+                                    @if (ViewBag.Error != null)
+                                    {
+                                        <div class="col-lg-12" style="text-align:center">
+                                            <!--begin::Advance Table Widget 4-->
+                                            <i class="far fa-check-circle" style="color:green; font-size:50px"></i>
+                                            <h1 class="mt-6" style="font-size: 2em; color:green; text-align:center;">Anket başarı ile tamamlanmıştır. </h1>
+                                            <h1 style="font-size: 2em; color:green; text-align:center">Anketimize katıldığınız için teşekkür ederiz. </h1>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col-lg-12" style="text-align:center">
+                                            <!--begin::Advance Table Widget 4-->
+                                            <i class="far fa-check-circle" style="color:green; font-size:50px"></i>
+                                            <h1 class="mt-6" style="font-size: 2em; color:red; text-align:center;">@ViewBag.Error </h1>
+                                        </div>
+                                    }
+                                    <!--end::Advance Table Widget 4-->
+                                </div>
+
+                            </div>
+                            <!--end: Wizard-->
+                        </div>
+                        <!--end: Wizard Form-->
+                    </div>
+                    <!--end: Wizard Body-->
+                </div>
+                <!--end: Wizard-->
+            </div>
+        </div>
+    </div>
+    <!--end::Container-->
+</div>
+

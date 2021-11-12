@@ -1,0 +1,168 @@
+﻿@using NonFactors.Mvc.Grid
+@using KariyerMerkezi.Models
+
+@model IGrid<Grup>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<section>
+    <div class="rad-body-wrapper rad-nav-min">
+        <div class="container-fluid">
+            <header class="rad-page-title">
+                <span style="display: inline-block">Gruplar</span>
+                <a class="btn btn-primary" style="background-color: blue; border-color: blue; float: right;" asp-action="ExcelGrup">Excel</a>
+
+            </header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rad-info-box rad-txt-success">
+                        @(new HtmlGrid<Grup>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="modalGrup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 125px">
+        <div class="modal-content">
+            <button style="margin-top: 20px; margin-right: 20px; text-align: right" type="button" class="close" data-dismiss="modal">&times;</button>
+            <form id="EditForm" method="post">
+                <div style="padding: 0px 30px; overflow-x: auto">
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Etkinlik Id</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="EtkinlikID" name="EtkinlikID">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Grup Adı</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Ad" name="Ad">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Kontenjan</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Kapasite" name="Kapasite">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Lokasyon</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Lokasyon" name="Lokasyon">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Başlangıç Tarihi</label>
+                        <div class="col-8">
+                            <input type="datetime-local" name="BaslangicTarihi" id="BaslangicTarihi" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Bitiş Tarihi</label>
+                        <div class="col-8">
+                            <input type="datetime-local" name="BitisTarihi" id="BitisTarihi" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div style="width:25%; display: inline;">
+                            <input style="width: fit-content; display: inline-block;" value="true" id="IsActive" type="checkbox" name="IsActive" class="form-control" /><label>Aktif</label>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            <button type="submit" class="btn btn-primary" value="btn" id="btn"> Güncelle</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top:70px" class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Başvuruyu Sil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: inline-block" id="DeleteRecord"></div> adlı kaydı silmek istediğinizden emin misiniz?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">İptal</button>
+                <a id="DeleteBtn" class="btn btn-primary font-weight-bold">Sil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+
+{
+    <script>
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var ID = e.currentTarget.dataset["aday"]; // a elementine tıklandığında a 'nın data-aday properties'ine tanımlı bilgiyi alıyoruz.
+            //console.log(tcnumber);
+            $.ajax({
+                async: false, // senkron şekilde servisden veri cekebilmek için asenkronu kapatıyoruz.
+                method: "GET", // methodun turunu yazıyor. POST methodu kullanılabilir.
+                dataType: "json", //Data gidiş ve geliş türünü belirleyebiliyoruz.
+                url: "getDataGrup", //sorgulayacağımız method veya url yi yazıyoruz.
+                data: { ID: ID } // methodumuzun parametresındeki tanım ile birebir olmalı. örneğin tcNo veya Kimlik no değil tc olmalı çünkü controller de methodun parametresi bu şekilde tanımlı
+            }).done(function (resp) {
+                rowData = resp // işlem başarılı bir şekilde tamamlandı ise dönen datayı  globale atıyoruz.
+                document.getElementById("DeleteBtn").href = "GrupDelete?id=" + rowData[0].id;
+            })
+        });
+
+        $("#modalDelete").on("show.bs.modal", function (event) {
+            document.getElementById("DeleteRecord").innerHTML = rowData[0].ad;
+        });
+
+        $("#modalGrup").on("show.bs.modal", function (event) {
+            document.getElementById("EditForm").action = "GrupEdit?id=" + rowData[0].id;
+            var modal = $(this);
+            modal.find("#EtkinlikID").val(rowData[0].id);
+            modal.find("#Ad").val(rowData[0].ad);
+            modal.find("#BaslangicTarihi").val(rowData[0].baslangicTarihi);
+            modal.find("#BitisTarihi").val(rowData[0].bitisTarihi);
+            modal.find("#Lokasyon").val(rowData[0].lokasyon);
+            if (rowData[0].isActive == true) {
+                modal.find("#IsActive").attr('checked', true)
+            }
+            modal.find("#Kapasite").val(rowData[0].kapasite);
+        });
+
+
+
+
+
+    </script>
+
+}

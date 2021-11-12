@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PaCNQeLiS4KQPIVIXbICxpX0ZHvENy4BuyXG4Z5pXflgxSjlyK6yDJqYBe9ybW20zsGhudQ8OANo+VXvssdVRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\muhammetkaya\\source\\repos\\SelfservisControlPanel\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\muhammetkaya\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

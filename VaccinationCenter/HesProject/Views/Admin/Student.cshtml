@@ -1,0 +1,202 @@
+﻿@using NonFactors.Mvc.Grid
+@using VaccinationCenter.Models
+
+@model IGrid<StudentVaccineInfo>
+
+@{
+    Layout = "~/Views/Admin/_AdminStudentLayout.cshtml";
+}
+
+
+<div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 125px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bilgiler</h5>
+                <button onclick="clearModal()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p id="notVaccine" style="text-align: center">Herhangi bir aşı olmamıştır.</p>
+                <table id="tableVaccine" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="font-weight:bold; width:50%" scope="col">Aşı Adı</th>
+                            <th style="font-weight: bold; width: 50%" scope="col">Aşı Tarihi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="clearModal()" type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+        <!--begin::Card-->
+        <div class="card card-custom mb-10">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-xl-4">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="Student" asp-controller="Admin" class="card card-custom bg-primary bg-hover-state-primary card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fas fa-user" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;">
+                                        <h1>@ViewBag.Student</h1>
+                                    </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">Tüm Öğrenciler</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                    <div class="col-xl-4">
+                        <!--begin::Stats Widget 15-->
+                        <a asp-action="StudentVaccine" asp-controller="Admin" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fas fa-syringe" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;">
+                                        <h1>@ViewBag.StudentVaccine</h1>
+                                    </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">Aşı Olmak İsteyen Öğrenciler</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 15-->
+                    </div>
+                    <div class="col-xl-4">
+                        <!--begin::Stats Widget 13-->
+                        <a asp-action="StudentUnVaccine" asp-controller="Admin" class="card card-custom bg-danger bg-hover-state-danger card-stretch gutter-b">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <div class="text-inverse-danger font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fas fa-times-circle" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;">
+                                        <h1>@ViewBag.StudentUnVaccine</h1>
+                                    </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-danger font-size-sm">Aşı Olmak İstemeyen Öğrenciler</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Stats Widget 13-->
+                    </div>
+                </div>
+
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--end: Datatable-->
+            </div>
+        </div>
+
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Tüm Öğrenciler
+                    </h3>
+                </div>
+                <div class="card-toolbar">
+                    <a asp-action="Excel" style="background-color: #3699ff; border-color: #3699ff;" class="btn btn-info font-weight-bolder font-size-sm mr-3">Excel</a>
+                </div>
+            </div>
+            <div class="card-body">
+
+
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                @(new HtmlGrid<StudentVaccineInfo>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Using(GridFilterMode.Header)
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+
+
+@section scripts
+
+{
+
+
+    <script>
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var ID = e.currentTarget.dataset["aday"];
+            $.ajax({
+                async: false,
+                method: "GET",
+                dataType: "json",
+                url: "vaccinationcenter/admin/getStudent",
+                data: { ID: ID }
+            }).done(function (resp) {
+                rowData = resp;
+                console.log(rowData);
+                for (var i = 0; i < rowData.length; i++) {
+
+                    var tr = document.createElement("tr");
+                    document.getElementById("tbody").appendChild(tr);
+                    tr.id = "tr" + i;
+                    var x = "tr" + i;
+                    var td = document.createElement("td");
+                    var td2 = document.createElement("td");
+                    document.getElementById(x).appendChild(td);
+                    document.getElementById(x).appendChild(td2);
+                    td.innerHTML = rowData[i].vaccineName;
+                    td2.innerHTML = rowData[i].vaccineDate;
+                    document.getElementById("tableVaccine").style.display = "table";
+                    document.getElementById("notVaccine").style.display = "none";
+                }
+
+                if (rowData.length == 0) {
+                    document.getElementById("tableVaccine").style.display = "none";
+                    document.getElementById("notVaccine").style.display = "block";
+                }
+                
+            })
+        });
+        function clearModal() {
+            document.getElementById("tbody").innerHTML = "";
+        }
+    </script>
+
+}

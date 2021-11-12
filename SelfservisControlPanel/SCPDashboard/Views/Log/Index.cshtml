@@ -1,0 +1,165 @@
+﻿@using NonFactors.Mvc.Grid
+@model IEnumerable<Entities.Entities.LogFromJson>
+
+@{
+    Layout = "~/Views/Log/_AdminLayout.cshtml";
+}
+
+<div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xs" style="margin-top: 125px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bilgiler</h5>
+                <button onclick="clearModal()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <table class="table table-bordered mb-6">
+                    <thead>
+                        <tr>
+                            <th scope="col">Telefon</th>
+                            <th scope="col">Sms Durumu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="Phone"></td>
+                            <td style="display: none" id="SmsSuccess">Sms başarı ile gönderilmiştir.</td>
+                            <td id="SmsError">Sms gönderimi başarısızdır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button onclick="clearModal()" type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+        <!--begin::Card-->
+
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Log Kayıtları
+                    </h3>
+                </div>
+                <div class="card-toolbar">
+                    <span id="GridConfigure" class="fa fa-cog"></span>
+                </div>
+            </div>
+            <div class="card-body">
+                
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                @(Html
+    .Grid(Model)
+    .Build(columns =>
+    {
+        columns.Add(model => model.Token).Filterable(GridFilterCase.Upper).Named("token").Titled("Token aldı mı?").RenderedAs(model => model.Token == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.Tc).Filterable(GridFilterCase.Upper).Named("tc").Titled("Tc").RenderedAs(model => model.Tc == null ? "Boş" : model.Tc);
+        columns.Add(model => model.Giris).Filterable(GridFilterCase.Upper).Named("giris").Titled("Giriş").RenderedAs(model => model.Giris == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.SifreDegistirme).Filterable(GridFilterCase.Upper).Named("sifredegistirme").Titled("Şifre Değiştirme").RenderedAs(model => model.SifreDegistirme == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.MailDogrulama).Filterable(GridFilterCase.Upper).Named("maildogrulama").Titled("Mail Doğrulama").RenderedAs(model => model.MailDogrulama == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.TelefonDogrulama).Filterable(GridFilterCase.Upper).Named("telefondogrulama").Titled("Telefon Doğrulama").RenderedAs(model => model.TelefonDogrulama == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.SifreResetlemeSonucu).Filterable(GridFilterCase.Upper).Named("sifreresetlemesonucu").Titled("Şifre Resetleme Sonucu").RenderedAs(model => model.SifreResetlemeSonucu == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.MailGonderme).Filterable(GridFilterCase.Upper).Named("mailgonderme").Titled("Mail Durumu").RenderedAs(model => model.MailGonderme == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.SmsGonderme).Filterable(GridFilterCase.Upper).Named("smsgonderme").Titled("Sms Durumu").RenderedAs(model => model.SmsGonderme == true ? "Başarılı" : "Başarısız");
+        columns.Add(model => model.SmsKodu).Filterable(GridFilterCase.Upper).Named("smskodu").Titled("Sms Kodu").RenderedAs(model => model.SmsKodu == null ? "Boş" : model.SmsKodu);
+        columns.Add(model => model.Tarih.ToString("dd/MM/yyyy")).Named("tarih").Titled("Tarih").Filterable(false).Sortable(true);
+        columns.Add(model => "<a href='#' type='button' class='detay btn btn-primary ' style='margin-right:10px' id='detayModal' data-toggle='modal' data-aday='" + model.SmsKodu + "' data-target='#modalDetail'><i class='fas fa-book'></i></a>").Titled("Detay").Encoded(false).Css("transaction");
+
+
+    })
+    .Named("preferences")
+   // .Configure()
+    .Using(GridFilterMode.Header)
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new { id = "StudentTable" })
+)
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+
+
+
+@section scripts
+
+{
+
+
+    <script>
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var SmsCode = e.currentTarget.dataset["aday"];
+            $.ajax({
+                async: false,
+                method: "GET",
+                dataType: "json",
+                url: "selfservislogs/log/getSms",
+                data: { SmsCode: SmsCode }
+            }).done(function (resp) {
+                rowData = resp;
+                document.getElementById("Phone").innerHTML = rowData.data.data.rapor.gonderilen[0];
+                if (rowData.success == true) {
+                    document.getElementById("SmsSuccess").style.display = "block";
+                    document.getElementById("SmsError").style.display = "none";
+                }
+                else {
+                    document.getElementById("SmsSuccess").style.display = "none";
+                    document.getElementById("SmsError").style.display = "block";
+                }
+                
+            })
+            
+        });
+
+        function clearModal() {
+            document.getElementById("Phone").innerHTML = "Bulunamadı";
+            document.getElementById("SmsSuccess").style.display = "none";
+            document.getElementById("SmsError").style.display = "block";
+        }
+
+        const configuration = localStorage.getItem("grid-config");
+        const grid = new MvcGrid(document.querySelector(".mvc-grid"));
+
+        if (configuration) {
+            // Client side configuration function
+            grid.configure(JSON.parse(configuration));
+        }
+
+        document.getElementById("GridConfigure").addEventListener("click", function () {
+            new MvcGrid(document.querySelector(".mvc-grid")).showConfiguration(this);
+        });
+
+        document.addEventListener("gridconfigure", e => {
+            const grid = e.detail.grid;
+            const configuration = grid.getConfiguration();
+
+            // Save configuration to a cookie/local storage/backend/etc.
+            // Every configuration should have a unique name for every grid, preferrably grid name.
+            localStorage.setItem("grid-" + grid.name, JSON.stringify(configuration));
+        });
+    </script>
+
+}

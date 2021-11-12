@@ -1,0 +1,180 @@
+﻿@model List<Student>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string[] mail = @Model[0].EPOSTA1.Split('@');
+}
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container">
+        <div class="card card-custom">
+            <div class="card-body p-0">
+                <!--begin: Wizard-->
+                <div class="wizard wizard-2" id="kt_wizard" data-wizard-state="first" data-wizard-clickable="false">
+                    <!--begin: Wizard Nav-->
+                    <div class="wizard-nav border-right py-8 px-8 py-lg-20 px-lg-10" style="padding:0px !important">
+                        <div class="card-body">
+                            <!--end::Toolbar-->
+                            <!--begin::User-->
+                            <div class="d-flex align-items-center">
+                                <div class="symbol symbol-60 symbol-xxl-100 mr-5 align-self-start align-self-xxl-center">
+                                    <div class="symbol-label" style="background-image: url('@Model[0].PICTURE')"></div>
+                                </div>
+                                <div>
+                                    <h1 class="font-weight-bolder font-size-h5 text-dark-75 text-hover-primary">@Model[0].OGR_ADI @Model[0].OGR_SOYAD</h1>
+                                    <div class="text-muted"> @mail[0].Substring(0, 2)*****@mail[0].Substring(mail[0].Length - 2, 2)@Model[0].EPOSTA1.Substring(mail[0].Length, 1)@mail[1].Substring(0, 2)*****@mail[1].Substring(mail[1].Length - 2, 2)</div>
+
+                                    <div class="text-muted">@Model[0].EPOSTA2</div>
+                                    <div class="mt-2">
+                                        <a href="@Url.Action("Close", "Student")" class="btn btn-sm btn-danger font-weight-bold py-2 px-3 px-xxl-5 my-1">Çıkış</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-9">
+
+                                <div class="pb-3" style="background: #3699ff; padding-left: 10px; padding-top: 10px;">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="font-weight-bold mr-2" style="font-weight: bold !important; color:white">Eğitim Bilgileri</span>
+                                    </div>
+                                </div>
+                                <div style="box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 10%);">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Fakülte</th>
+                                                <th scope="col">Bölüm</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>@item.FAKULTE_AD</td>
+                                                    <td>@item.BOLUM_AD</td>
+                                                </tr>
+                                            }
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+                            </div>
+                            <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
+                                <div class="navi-item mb-2">
+                                    <a href="@Url.Action("StudentInfo", "Student")" class="navi-link py-4 active">
+                                        <span class="navi-icon mr-2">
+                                            <span class="svg-icon">
+                                                <!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Design/Layers.svg-->
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                                        <path d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z" fill="#000000" fill-rule="nonzero"></path>
+                                                        <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3"></path>
+                                                    </g>
+                                                </svg>
+                                                <!--end::Svg Icon-->
+                                            </span>
+                                        </span>
+                                        <span class="navi-text font-size-lg">Hes Kodu Kaydı</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end::Nav-->
+                        </div>
+
+                    </div>
+                    <!--end: Wizard Nav-->
+                    <!--begin: Wizard Body-->
+                    <div class="wizard-body py-8 px-8 py-lg-20 px-lg-10" style="margin:auto">
+                        <!--begin: Wizard Form-->
+                        <div class="row">
+                            <div class="offset-xxl-2 col-xxl-8">
+                               
+                                @if (ViewBag.Tc != null)
+                                {
+                                    <div class="py-9">
+
+                                        <div class="pb-3" style="background: #3699ff; padding-left: 10px; padding-top: 10px;">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="font-weight-bold mr-2" style="font-weight: bold !important; color:white">Hes Bilgileri</span>
+                                            </div>
+                                        </div>
+                                        <div style="box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 10%);">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Hes Kodu</th>
+                                                        <th scope="col">Hes Durumu</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>@ViewBag.Hes</td>
+
+                                                        <td>@ViewBag.Durum</td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+
+                                    </div>
+                                }
+
+                                else
+                                {
+                                    <form class="form fv-plugins-bootstrap fv-plugins-framework" id="kt_form" action="@Url.Action("CheckEmployeeHesCode", "Student")" method="POST">
+                                        <!--begin: Wizard Step 1-->
+                                        <!--end: Wizard Step 1-->
+                                        <!--begin: Wizard Step 2-->
+                                        <div class="pb-5" data-wizard-type="step-content">
+                                            <h4 class="mb-10 font-weight-bold text-dark">Hes Kodu Kaydı</h4>
+                                            <div class="form-group fv-plugins-icon-container">
+                                                <label>Hes Kodunuzu Giriniz </label>
+                                                <input type="text" class="form-control form-control-solid form-control-lg" name="hes" placeholder="Hes Kodunuz" value="">
+                                                <input type="hidden" name="tc" value="@Model[0].TC_KIMLIK_NO">
+                                                <input type="hidden" name="status" value="Personel">
+                                                <span class="form-text text-muted"></span>
+                                                <div class="fv-plugins-message-container"></div>
+                                            </div>
+                                        </div>
+                                        <!--end: Wizard Step 3-->
+                                        <!--begin: Wizard Step 4-->
+                                        <!--end: Wizard Step 6-->
+                                        <!--begin: Wizard Actions-->
+                                        <div class="d-flex justify-content-between border-top mt-5 pt-10" style="display: block !important">
+                                            <div class="mr-2">
+                                                <button onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; " type="submit" data-toggle="modal" data-target="#exampleModal" style="float: right !important" class="btn btn-light-success font-weight-bolder text-uppercase px-9 py-4">Sorgula</button>
+
+                                            </div>
+                                        </div>
+                                        <!--end: Wizard Actions-->
+                                        <h1 style="font-size: 1em; color:red; text-align:center">@ViewBag.HesCodeError</h1>
+                                        <div></div><div></div><div></div><div></div><div></div>
+                                    </form>
+                                }
+                            </div>
+                            <!--end: Wizard-->
+                        </div>
+                        <!--end: Wizard Form-->
+                    </div>
+                    <!--end: Wizard Body-->
+                </div>
+                <!--end: Wizard-->
+            </div>
+        </div>
+    </div>
+    <!--end::Container-->
+</div>
+
+
+
+

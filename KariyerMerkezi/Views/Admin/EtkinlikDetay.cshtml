@@ -1,0 +1,180 @@
+﻿@using NonFactors.Mvc.Grid
+@using KariyerMerkezi.Models
+
+@model IGrid<Grup_Katilimci_Etkinlik>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-top:270px" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div style="text-align: center" class="modal-body">
+                Sertifikalar gönderiliyor. Lütfen bekleyin..
+            </div>
+        </div>
+    </div>
+</div>
+
+<form id="myForm" method="post">
+    <section>
+        <div class="rad-body-wrapper rad-nav-min">
+            <div class="container-fluid">
+                <header class="rad-page-title">
+                    <span style="display: inline-block">Başvurular</span>
+                    <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="YoklamaGeldi()" type="submit" class="btn btn-primary" value="btn" id="btn">Geldi</button>
+                    <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="YoklamaGelmedi()" type="submit" class="btn btn-primary" value="btn" id="btn">Gelmedi</button>
+                    <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="Sertifika()" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" value="btn" id="btn">Sertifika</button>
+                </header>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="rad-info-box rad-txt-success">
+                            @(new HtmlGrid<Grup_Katilimci_Etkinlik>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
+<script>
+    function YoklamaGeldi() {
+        document.getElementById("myForm").action = "YoklamaGeldi";
+
+
+    }
+
+    function YoklamaGelmedi() {
+        document.getElementById("myForm").action = "YoklamaGelmedi";
+
+
+    }
+
+    function Sertifika() {
+        document.getElementById("myForm").action = "Sertifika"
+    }
+</script>
+
+
+
+@*@model IEnumerable<KariyerMerkezi.Models.Grup_Katilimci_Etkinlik>
+    @{
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+
+    <div style="margin-top:270px" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div style="text-align: center" class="modal-body">
+                    Sertifikalar gönderiliyor. Lütfen bekleyin..
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="myForm" method="post">
+        <section>
+            <div class="rad-body-wrapper rad-nav-min">
+                <div class="container-fluid">
+                    <header class="rad-page-title">
+                        <span style="display: inline-block">Başvurular</span>
+                        <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="YoklamaGeldi()" type="submit" class="btn btn-primary" value="btn" id="btn">Geldi</button>
+                        <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="YoklamaGelmedi()" type="submit" class="btn btn-primary" value="btn" id="btn">Gelmedi</button>
+                        <button style="margin-right: 20px; float: right; background-color: #0069d9; border-color: #0062cc;" onclick="Sertifika()" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" value="btn" id="btn">Sertifika</button>
+
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rad-info-box rad-txt-success">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Seçim</th>
+                                            <th scope="col">Adı Soyadı</th>
+                                            <th scope="col">Eğitim Adı</th>
+                                            <th scope="col">Katılım Durumu</th>
+                                            <th scope="col">Sertifika Durumu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var item in Model)
+                                        {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="Secim" value="@item.ID">
+
+                                            </td>
+                                            <td>
+                                                @item.Ad_Soyad
+                                            </td>
+                                            <td>@item.Egitim_Adi</td>
+                                            @if (item.Yoklama == true)
+                                            {
+                                                <td>Geldi</td>
+                                            }
+                                            else if (item.Yoklama == false)
+                                            {
+                                                <td>Gelmedi</td>
+
+                                            }
+                                            else if (item.Yoklama == null)
+                                            {
+                                                <td>Beklemede</td>
+                                            }
+                                            @if (item.Sertifika == true)
+                                            {
+                                                <td>Gönderildi</td>
+                                            }
+                                            else if (item.Sertifika == false)
+                                            {
+                                                <td>Gönderilmedi</td>
+
+                                            }
+                                            else if (item.Sertifika == null)
+                                            {
+                                                <td>Beklemede</td>
+                                            }
+                                        </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <script>
+        function YoklamaGeldi() {
+            document.getElementById("myForm").action = "/Admin/YoklamaGeldi";
+
+
+        }
+
+        function YoklamaGelmedi() {
+            document.getElementById("myForm").action = "/Admin/YoklamaGelmedi";
+
+
+        }
+
+        function Sertifika() {
+            document.getElementById("myForm").action = "/Admin/Sertifika"
+        }
+    </script>*@

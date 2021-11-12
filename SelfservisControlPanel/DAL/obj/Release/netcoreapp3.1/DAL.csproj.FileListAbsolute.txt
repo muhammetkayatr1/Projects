@@ -1,0 +1,16 @@
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\DAL.deps.json
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\DAL.runtimeconfig.json
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\DAL.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\DAL.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\Entities.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\bin\Release\netcoreapp3.1\Entities.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\DAL\obj\Release\netcoreapp3.1\DAL.genruntimeconfig.cache

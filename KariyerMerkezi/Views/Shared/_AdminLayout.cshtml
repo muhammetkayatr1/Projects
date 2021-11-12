@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kariyer Merkezi Sistemi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
+    <link href="~/admin/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/admin/css/mvc-grid/mvc-grid.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/MvcGrid/style.css" rel="stylesheet" />
+
+    <style>
+        .col-width{
+            width:170px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <header>
+            <nav class="rad-navigation">
+                <div class="rad-logo-container rad-nav-min">
+                    <a href="#" class="rad-logo" style="font-size: 12px"> KARİYER MERKEZİ SİSTEMİ</a>
+                    <a href="#" class="rad-toggle-btn pull-right"><i class="fa fa-bars"></i></a>
+                </div>
+                <a href="#" class="rad-logo-hidden">KARİYER MERKEZİ SİSTEMİ</a>
+                <div class="rad-top-nav-container">
+                    <a class="brand-icon"><i class="fa fa-recycle"></i></a>
+                    <ul class="pull-right links">
+                        <li class="rad-menu-item no-color">
+                            <a class="rad-menu-item" asp-controller="Login" asp-action="Logout"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="pull-right links">
+                        <li>
+                            <a class="rad-menu-item" asp-controller="Admin" asp-action="StudentList">Başvurular</a>
+                        </li>
+                        <li>
+                            <a class="rad-menu-item" asp-controller="Admin" asp-action="Etkinlik">Etkinlikler</a>
+                        </li>
+                        <li>
+                            <a class="rad-menu-item" asp-controller="Admin" asp-action="Grup">Gruplar</a>
+                        </li>
+                        <li>
+                            <a class="rad-menu-item" asp-controller="Admin" asp-action="MailManager">Mail Yönetimi</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <aside>
+        <nav class="rad-sidebar rad-nav-min">
+            <ul>
+                <li>
+                    <a asp-controller="Admin" asp-action="Home" class="inbox">
+                        <i class="fa fa-dashboard"><span class="icon-bg rad-bg-success"></span></i>
+                        <span class="rad-sidebar-item">Anasayfa</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="Etkinlik">
+                        <i class="fas fa-globe">
+                            <span class="icon-bg rad-bg-danger"></span>
+                        </i>
+                        <span class="rad-sidebar-item">Etkinlikler</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="Grup">
+                        <i class="fas fa-users">
+                            <span style="background:#c79f2c" class="icon-bg"></span>
+                        </i>
+                        <span class="rad-sidebar-item">Gruplar</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="StudentList">
+                        <i class="fa fa-user">
+                            <span style="background:#3b79e9" class="icon-bg"></span>
+                        </i>
+                        <span class="rad-sidebar-item">Başvurular</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Admin" asp-action="MailManager">
+                        <i class="fas fa-envelope">
+                            <span class="icon-bg rad-bg-danger"></span>
+                        </i>
+                        <span class="rad-sidebar-item">Mail Yönetimi</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Login" asp-action="Logout">
+                        <i class="fa fa-power-off"><span class="icon-bg rad-bg-violet"></span></i>
+                        <span class="rad-sidebar-item">Çıkış</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+
+        @RenderBody()
+
+    </main>
+    <script src='~/admin/js/jquery.min.js'></script>
+    <script src="~/admin/js/bootstrap.js"></script>
+    <script src="~/admin/js/mvc-grid/mvc-grid.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <script>
+        document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+    </script>
+    <script src="~/admin/js/jquery.slimscroll.min.js"></script>
+    @RenderSection("scripts", false);
+</body>
+</html>
+

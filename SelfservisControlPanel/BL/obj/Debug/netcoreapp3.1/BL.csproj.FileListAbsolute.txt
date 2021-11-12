@@ -1,0 +1,15 @@
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\BL.deps.json
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\BL.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\BL.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfo.cs
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.csproj.CopyComplete
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.dll
+C:\Users\muhammetkaya\source\repos\SelfservisControlPanel\BL\obj\Debug\netcoreapp3.1\BL.pdb

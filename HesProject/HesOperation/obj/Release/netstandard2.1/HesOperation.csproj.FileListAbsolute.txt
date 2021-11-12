@@ -1,0 +1,10 @@
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\bin\Release\netstandard2.1\HesOperation.deps.json
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\bin\Release\netstandard2.1\HesOperation.dll
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\bin\Release\netstandard2.1\HesOperation.pdb
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.AssemblyInfo.cs
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.dll
+C:\Users\muhammetkaya\source\repos\HesProject\HesOperation\obj\Release\netstandard2.1\HesOperation.pdb

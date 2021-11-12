@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="wrap d-md-flex">
+                    <div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+                        <div style="margin-bottom: 80px" class="text w-100">
+                            <img style="width: 150px; margin-bottom: 20px" src="~/images/haliclogoyeni.png">
+                            <h2>Kariyer Merkezi Sistemi</h2>
+                            <p>Oturum Açma</p>
+                        </div>
+                    </div>
+                    <div class="login-wrap p-4 p-lg-5">
+                        <div class="d-flex">
+                            <div class="w-100">
+                                <h3 style="font-family: Arial, sans-serif" class="mb-4">GİRİŞ</h3>
+                            </div>
+                            <div class="w-100">
+                                <p class="social-media d-flex justify-content-end">
+                                    <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+                                    <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+                                    <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <form method="POST" action="@Url.Action("Login", "Login")" class="signin-form">
+                            <div class="form-group mb-3">
+                                <label style="font-family: Arial, sans-serif; text-transform: none" class="label" for="tc">Kullanıcı Adı</label>
+                                <input type="text" class="form-control" name="userName" placeholder="Kullanıcı adınızı giriniz." required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label style="font-family: Arial, sans-serif; text-transform: none" class="label" for="hes">Şifre</label>
+                                <input type="password" class="form-control" name="password" placeholder="Şifrenizi giriniz." required>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3" style="font-weight: bold">GİRİŞ YAP</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

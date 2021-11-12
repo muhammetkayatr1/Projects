@@ -1,0 +1,386 @@
+﻿@using NonFactors.Mvc.Grid
+@using HesProject.Models
+
+@model IGrid<ProlizData>
+
+@{
+    Layout = "~/Views/Admin/_AdminStudentLayout.cshtml";
+}
+
+<div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 125px">
+        <form asp-action="Edit" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bilgiler</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tbody>
+
+                            <tr>
+                                <th style="width:50%" scope="col">Ad</th>
+                                <td id="name"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Soyad</th>
+                                <td id="surname"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Fakülte</th>
+                                <td id="faculty"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Bölüm</th>
+                                <td id="program"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th style="width:50%" scope="col">Hes Kodu</th>
+                                <td id="hesCode"></td>
+
+                            </tr>
+                            <tr>
+                                <th style="width:50%" scope="col">Risk Durumu</th>
+                                <td id="healty"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Aşılı Durumu</th>
+                                <td id="vaccine"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Geçirilmiş Hastalık</th>
+                                <td id="immune"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Son 48 Saat Negatif Test</th>
+                                <td id="pcr"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="font-weight:bold" scope="col">Kart Kilitli Mi?</th>
+                                <th style="font-weight:bold" scope="col">Açıklama</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="cardStatus"></td>
+                                <td id="cardDescription"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalGrup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-s" style="margin-top: 125px">
+        <form asp-action="Edit" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bilgiler</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" class="form-control" name="action" value="Student">
+                    <input type="hidden" class="form-control" name="id" id="Id">
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label">Hes</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="Hes" id="Hes">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalGate" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-s" style="margin-top: 125px">
+        <form asp-action="Gate" asp-controller="Konfides" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kart Durumu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body row">
+
+                    <input type="hidden" class="form-control" name="action" value="Student">
+                    <input type="hidden" class="form-control" name="controller" value="Admin">
+                    <input type="hidden" name="tc" id="TcGate"><input type="hidden" name="GateId" id="GateId">
+                    <input type="hidden" name="result" id="IsBlocked">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <p>Kişi kart bilgilerini güncelleştirmek istediğinizden emin misiniz?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="btnSubmit"></button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container" style="max-width: 100%">
+        <!--end::Notice-->
+
+
+        <div class="card card-custom mb-10">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-xl-3">
+
+                        <a asp-action="Student" class="card card-custom bg-primary bg-hover-state-primary card-stretch gutter-b">
+
+                            <div class="card-body">
+
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fa fa-user" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;">
+                                        <h1>@ViewBag.Student</h1>
+                                    </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">
+                                    Öğrenciler
+                                    @*<div style="text-align: end;display: inline-block;float: right;">Detaya Git<i class="icon-xl fas fa-arrow-alt-circle-right" style="float: right;color: white;font-size: 18px !important;margin-left: 5px;"></i></div>*@
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a asp-action="StudentRiskless" class="card card-custom bg-success bg-hover-state-success card-stretch gutter-b">
+
+                            <div class="card-body">
+
+                                <div class="text-inverse-success font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fas fa-heart" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;">
+                                        <h1>@ViewBag.StudentRiskless</h1>
+                                    </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-success font-size-sm">
+                                    Sağlıklı Öğrenciler
+                                    @*<div style="text-align: end;display: inline-block;float: right;">Detaya Git<i class="icon-xl fas fa-arrow-alt-circle-right" style="float: right;color: white;font-size: 18px !important;margin-left: 5px;"></i></div>*@
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a asp-action="StudentRisky" class="card card-custom bg-danger bg-hover-state-danger card-stretch gutter-b">
+
+                            <div class="card-body">
+
+                                <div class="text-inverse-danger font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;"> <h1>@ViewBag.StudentRisky</h1> </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-danger font-size-sm">
+                                    Riskli Öğrenciler
+                                    @*<div style="text-align: end;display: inline-block;float: right;">Detaya Git<i class="icon-xl fas fa-arrow-alt-circle-right" style="float: right;color: white;font-size: 18px !important;margin-left: 5px;"></i></div>*@
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a asp-action="StudentError" class="card card-custom bg-warning bg-hover-state-warning card-stretch gutter-b">
+
+                            <div class="card-body">
+
+                                <div class="text-inverse-primary font-weight-bolder font-size-h5 mb-2 mt-5">
+                                    <i class="fas fa-times-circle" aria-hidden="true" style="color: white !important;font-size: 30px;"></i>
+                                    <div style="text-align: end; display: inline-block; float: right; font-size: 30px;"><h1>@ViewBag.StudentError</h1> </div>
+                                </div>
+                                <div class="font-weight-bold text-inverse-primary font-size-sm">
+                                    Kod Sorunlu Öğrenciler
+                                    @*<div style="text-align: end;display: inline-block;float: right;">Detaya Git<i class="icon-xl fas fa-arrow-alt-circle-right" style="float: right;color: white;font-size: 18px !important;margin-left: 5px;"></i></div>*@
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">
+                        Tüm Öğrenciler
+                    </h3>
+                </div>
+                @*<div class="card-toolbar">
+                    <a asp-action="" style="background-color: #3699ff; border-color: #3699ff;" class="btn btn-info font-weight-bolder font-size-sm mr-3">Excel</a>
+                </div>*@
+            </div>
+            <div class="card-body">
+
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                @(new HtmlGrid<ProlizData>
+   (Html, Model)
+    .Build(columns =>
+    {
+
+    })
+    .Using(GridFilterMode.Header)
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                <!--end: Datatable-->
+            </div>
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+
+@section scripts
+
+{
+
+
+    <script>
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var ID = e.currentTarget.dataset["aday"];
+            $.ajax({
+                async: false,
+                method: "GET",
+                dataType: "json",
+                url: "hes/admin/getData",
+                data: { ID: ID }
+            }).done(function (resp) {
+                rowData = resp;
+                console.log(rowData);
+                document.getElementById("Id").value = rowData.id; document.getElementById("GateId").value = rowData.id;
+                document.getElementById("TcGate").value = rowData.tckimlikno;
+                document.getElementById("Hes").value = rowData.heskod;
+                document.getElementById("IsBlocked").value = rowData.isBlocked;
+
+                if (rowData.isBlocked == true) {
+                    document.getElementById("btnSubmit").innerHTML = "Kilidi Kaldır";
+                }
+                else {
+                    document.getElementById("btnSubmit").innerHTML = "Kilitle";
+                }
+
+                document.getElementById("name").innerHTML = rowData.ad;
+                document.getElementById("surname").innerHTML = rowData.soyad;
+                document.getElementById("faculty").innerHTML = rowData.fakulte;
+                document.getElementById("program").innerHTML = rowData.bolum;
+                document.getElementById("hesCode").innerHTML = rowData.heskod;
+                if (rowData.current_health_status == "RISKLESS") {
+                    document.getElementById("healty").innerHTML = "RİSKLİ DEĞİL";
+                }
+                else if (rowData.current_health_status == "RISKY") {
+                    document.getElementById("healty").innerHTML = "RİSKLİ";
+                }
+                else {
+                    document.getElementById("healty").innerHTML = "Bilgi Bulunamadı";
+                }
+
+                if (rowData.is_vaccinated == true) {
+                    document.getElementById("vaccine").innerHTML = "Aşıları Tamamlanmıştır";
+                }
+                else if (rowData.is_vaccinated == false) {
+                    document.getElementById("vaccine").innerHTML = "Aşıları Tamamlanmamıştır";
+                }
+                else {
+                    document.getElementById("vaccine").innerHTML = "Bilgi Bulunamadı";
+                }
+
+                if (rowData.is_immune == true) {
+                    document.getElementById("immune").innerHTML = "Hastalık Geçirmiştir";
+                }
+                else if (rowData.is_immune == false) {
+                    document.getElementById("immune").innerHTML = "Hastalık Geçirmemiştir";
+                }
+                else {
+                    document.getElementById("immune").innerHTML = "Bilgi Bulunamadı";
+                }
+
+                if (rowData.last_negative_test_date != null) {
+                    document.getElementById("pcr").innerHTML = rowData.last_negative_test_date;
+                }
+                else {
+                    document.getElementById("pcr").innerHTML = "Bilgi Bulunamadı";
+                }
+                if (rowData.isBlocked == true) {
+                    document.getElementById("cardStatus").innerHTML = "Kilitli";
+                }
+                else if (rowData.isBlocked == false) {
+                    document.getElementById("cardStatus").innerHTML = "Kilitli Değil";
+                }
+                else {
+                    document.getElementById("cardStatus").innerHTML = "Bilinmiyor";
+                }
+
+                if (rowData.description != null) {
+                    document.getElementById("cardDescription").innerHTML = rowData.description;
+                }
+                else {
+                    document.getElementById("cardDescription").innerHTML = "Bilinmiyor";
+                }
+            })
+        });
+
+
+    </script>
+
+}

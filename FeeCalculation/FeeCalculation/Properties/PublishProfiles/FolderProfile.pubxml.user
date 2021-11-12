@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\muhammetkaya\Desktop\publish\FeeCalculation</_PublishTargetUrl>
+    <History>True|2021-08-26T11:19:08.7018411Z;True|2021-08-26T14:12:46.6211774+03:00;True|2021-08-26T13:49:42.5338061+03:00;True|2021-08-26T13:45:46.6265217+03:00;True|2021-08-25T19:01:48.0116397+03:00;True|2021-08-25T18:57:36.6113769+03:00;True|2021-08-25T18:48:27.5844938+03:00;True|2021-08-25T18:41:21.8581856+03:00;True|2021-08-25T17:37:39.8509274+03:00;</History>
+  </PropertyGroup>
+</Project>

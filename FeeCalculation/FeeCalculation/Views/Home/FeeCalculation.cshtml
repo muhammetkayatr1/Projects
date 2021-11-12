@@ -1,0 +1,244 @@
+﻿@model ActiveStudent
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container">
+        <div class="card card-custom">
+            <div class="card-body p-0">
+                <!--begin: Wizard-->
+                <div class="wizard wizard-2" id="kt_wizard" data-wizard-state="first" data-wizard-clickable="false">
+                    <!--begin: Wizard Nav-->
+                    <div class="wizard-nav border-right py-8 px-8 py-lg-20 px-lg-10" style="padding:0px !important">
+                        <!--begin::Wizard Step 1 Nav-->
+                        <div class="card-body">
+                            <!--end::Toolbar-->
+                            <!--begin::User-->
+                            <div class="text-center mb-10">
+                                <div class="symbol symbol-60 symbol-circle symbol-xl-90">
+                                    <div class="symbol-label" style="background-image:url('../images/human.jpg')"></div>
+                                    <i class="symbol-badge symbol-badge-bottom bg-success"></i>
+                                </div>
+                                <h4 class="font-weight-bold my-2">@Model.NameSurname</h4>
+                                <div style="color: #3F4254 !important" class="text-muted mb-1">@Model.TcNumber</div>
+                                <div style="color: #3F4254 !important" class="text-muted mb-2">@Model.Program</div>
+                                <a style="padding: 16px; background: #1d77ab; color: white; " href="@Url.Action("Index", "Home")" class="label label-light-warning label-inline font-weight-bold label-lg">Çıkış</a>
+                            </div>
+                            <div class="pb-3" style="background: #d8ab45; padding-left: 10px;padding-top: 10px;border-top-right-radius: 42px;">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="font-weight-bold mr-2" style="font-weight: bold !important; color:white">ÖDEME BİLGİLERİ</span>
+                                </div>
+                            </div>
+                            <div style="box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 20%); padding: 10px;">
+                                <div class="pb-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="font-weight-bold mr-2">Eğitim Ücreti:</span>
+                                        <span style="font-weight:bold; color:black !important" class="text-muted">@Model.Fee ₺</span>
+                                    </div>
+                                </div>
+                                <div class="py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="font-weight-bold mr-2">1. İndirim:</span>
+                                        <span style="font-weight:bold; color:black !important" class="text-muted text-hover-primary">%@Model.FirstDiscount</span>
+                                    </div>
+                                    @if (@Model.SecondDiscount.Substring(0,1) != " ")
+                                    {
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="font-weight-bold mr-2">2. İndirim:</span>
+                                            <span style="font-weight:bold; color:black !important" class="text-muted">%@Model.SecondDiscount</span>
+                                        </div>
+                                    }
+                                    @if (@Model.ThirdDiscount.Substring(0, 1) != " ")
+                                    {
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span class="font-weight-bold mr-2">3. İndirim:</span>
+                                            <span style="font-weight:bold; color:black !important" class="text-muted">%@Model.ThirdDiscount</span>
+                                        </div>
+                                    }
+                                    
+                                </div>
+                                <div class="py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="font-weight-bold mr-2">Taksitli Ücret:</span>
+                                        <span style="font-weight:bold; color:black !important" class="text-muted text-hover-primary">@Model.DiscountFee ₺</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="font-weight-bold mr-2">Peşin Ücret:</span>
+                                        <span style="font-weight:bold; color:black !important" class="text-muted">@Model.AdvanceFee ₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
+                            </div>
+                            <!--end::Nav-->
+                        </div>
+
+                    </div>
+                    <!--end: Wizard Nav-->
+                    <!--begin: Wizard Body-->
+                    <div class="wizard-body py-8 px-8 py-lg-20 px-lg-10">
+                        <!--begin: Wizard Form-->
+                        <div class="row">
+                            <div class="offset-xxl-2 col-xxl-8" style="background: #3853b7; border-radius: 6px; padding: 10px 10px; margin-bottom: 16px;">
+
+                                <div class="timeline timeline-5">
+                                    <div class="timeline-items">
+                                        <div class="timeline-item">
+                                            <!--begin::Icon-->
+                                            <div class="timeline-media bg-light-danger">
+                                                <span class="svg-icon-danger svg-icon-md">
+                                                    1
+                                                </span>
+                                            </div>
+                                            <!--end::Icon-->
+                                            <!--begin::Info-->
+                                            <div class="timeline-desc timeline-desc-light-danger">
+                                                <span class="font-weight-bolder text-danger">Bilgilendirme</span>
+                                                <p style="color:white !important" class="font-weight-normal text-dark-50 pt-1">
+                                                    Belirtilen ücret tamamen bilgilendirme amaçlıdır. Mali işler daire başkanlığı kayıtları esas alınacaktır.
+                                                </p>
+                                            </div>
+                                            <!--end::Info-->
+                                        </div>
+                                        <!--begin::Item-->
+                                        <div class="timeline-item">
+                                            <!--begin::Icon-->
+                                            <div class="timeline-media bg-light-primary">
+                                                <span class="svg-icon-primary svg-icon-md">
+                                                    2
+                                                </span>
+                                            </div>
+                                            <!--end::Icon-->
+                                            <!--begin::Info-->
+                                            <div class="timeline-desc timeline-desc-light-primary">
+                                                <span class="font-weight-bolder text-primary">Taksitlendirme ve Kredi Kartı</span>
+                                                <p style="color: white !important" class="font-weight-normal text-dark-50 pb-2">
+                                                    Vakıfbank ya da Denizbank OTS sistemiyle taksitlendirme ya da Kredi Kartı işlemleri için üniversitemiz Sütlüce Yerleşkesine gelmeniz gerekmektedir.
+                                                    Banka taksitlendirmesi için veliniz ile gelmelisiniz. Kredi kartı işlemleri için velinizin gelmesine gerek yoktur.
+                                                </p>
+                                            </div>
+                                            <!--end::Info-->
+                                        </div>
+                                        <!--end::Item-->
+                                        <!--begin::Item-->
+                                        <div class="timeline-item">
+                                            <!--begin::Icon-->
+                                            <div class="timeline-media bg-light-warning">
+                                                <span class="svg-icon-warning svg-icon-md">
+                                                    3
+                                                </span>
+                                            </div>
+                                            <!--end::Icon-->
+                                            <!--begin::Info-->
+                                            <div class="timeline-desc timeline-desc-light-warning">
+                                                <span class="font-weight-bolder text-warning">Peşin Ödeme</span>
+                                                <p style="color: white !important" class="font-weight-normal text-dark-50 pt-1 pb-2">
+                                                    Peşin ödeme için %5 peşin ödeme indirimli tutarınızı aşağıdaki hesap bilgilerine yapıp dekontunuzu ogrencimuhasebesi@halic.edu.tr adresine mail atabilirsiniz.
+                                                    Bu durumda üniversiteye gelmenize gerek yoktur.
+                                                </p>
+                                            </div>
+                                            <!--end::Info-->
+                                        </div>
+                                        <!--end::Item-->
+                                        <!--begin::Item-->
+                                        <!--end::Item-->
+                                        <!--begin::Item-->
+                                        <!--end::Item-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row" style="margin:auto">
+                                <div class="col-lg-6">
+                                    <table class="table table-bordered" style="box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 20%)">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align:center" colspan="2">Vakıfbank</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Hesap Adı</th>
+                                                <td>Haliç Üniversitesi</td>
+                                            </tr>
+                                            <tr>
+                                                <th>IBAN</th>
+                                                <td>TR41 0001 5001 5800 7309 0338 85</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Açıklama</th>
+                                                <td>Öğrenci Adı-Soyadı, TC Kimlik Numarası</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-lg-6">
+                                    <table class="table table-bordered" style="box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 20%)">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align:center" colspan="2">Denizbank</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Hesap Adı</th>
+                                                <td>Haliç Üniversitesi</td>
+                                            </tr>
+                                            <tr>
+                                                <th>IBAN</th>
+                                                <td>TR93 0013 4000 0026 5447 3000 85</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Açıklama</th>
+                                                <td>Öğrenci Adı-Soyadı, TC Kimlik Numarası</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+
+                            @*<div class="card-body p-0"">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Bank Adı</th>
+                        <th scope="row">Hesab Adı</th>
+                        <th scope="row">IBAN</th>
+                        <th scope="row">Açıklama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Denizbank</td>
+                        <td>Haliç Üniversitesi</td>
+                        <td>TR93 0013 4000 0026 5447 3000 85</td>
+                        <td>Öğrenci Adı-Soyadı, TC Kimlik Numarası</td>
+                    </tr>
+                    <tr>
+                        <td>Vakıfbank</td>
+                        <td>Haliç Üniversitesi</td>
+                        <td>TR41 0001 5001 5800 7309 0338 85</td>
+                        <td>Öğrenci Adı-Soyadı, TC Kimlik Numarası</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>*@
+                            <!--end: Wizard-->
+                        </div>
+                        <!--end: Wizard Form-->
+                    </div>
+                    <!--end: Wizard Body-->
+                </div>
+                <!--end: Wizard-->
+            </div>
+        </div>
+    </div>
+    <!--end::Container-->
+</div>
+
+

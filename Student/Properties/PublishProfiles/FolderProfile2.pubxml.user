@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\muhammetkaya\Desktop\publish\SelfServisStudent</_PublishTargetUrl>
+    <History>True|2021-09-28T12:35:04.5188899Z;True|2021-09-28T15:30:50.3852818+03:00;True|2021-09-27T14:42:45.1529961+03:00;True|2021-09-27T11:28:18.1045701+03:00;True|2021-09-24T16:46:50.8114222+03:00;True|2021-09-24T16:12:16.0534118+03:00;True|2021-09-24T16:01:21.6268365+03:00;True|2021-09-24T15:57:28.3826432+03:00;True|2021-09-24T14:41:12.2324536+03:00;True|2021-09-24T11:55:03.3636900+03:00;False|2021-09-24T11:53:57.0271434+03:00;True|2021-09-24T10:37:54.3332041+03:00;True|2021-09-24T10:33:13.3166564+03:00;</History>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,109 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+  
+
+
+
+}
+<div class="d-flex flex-column flex-root">
+    <!--begin::Login-->
+    <div class="login login-4 login-signin-on d-flex flex-row-fluid" id="kt_login">
+        <div class="d-flex flex-center flex-row-fluid bgi-size-cover bgi-position-top bgi-no-repeat">
+            <div class="login-form text-center p-7 position-relative overflow-hidden">
+                <!--begin::Login Header-->
+                <div class="d-flex flex-center mb-15">
+                    <a href="https://halic.edu.tr">
+                        <img src="https://halic.edu.tr/Templates/Default/assets/img/haliclogoyeni.png" class="max-h-175px" alt="" />
+                    </a>
+                </div>
+                <!--end::Login Header-->
+                <!--begin::Login Sign in form-->
+                <div class="login-signin">
+                    <div class="mb-20">
+                        <h3>Haliç Üniversitesi</h3>
+                        <h3>Ödeme Bilgi Sistemi</h3>
+                    </div>
+                    <h1 style="font-size: 1em; color:red; text-align:center">@ViewBag.NotFound</h1>
+                    <form class="form fv-plugins-bootstrap fv-plugins-framework" action="@Url.Action("FeeCalculation", "Home")" method="POST">
+                        <div class="form-group mb-5 fv-plugins-icon-container">
+                            <input class="form-control h-auto form-control-solid py-4 px-8" type="text" placeholder="Tc kimlik numaranız" name="tc" autocomplete="off">
+                            <div class="fv-plugins-message-container"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">Giriş</button>
+                        <input type="hidden"><div></div>
+                    </form>
+                </div>
+                <!--end::Login Sign in form-->
+                <!--begin::Login Sign up form-->
+                <!--end::Login Sign up form-->
+                <!--begin::Login forgot password form-->
+                <!--end::Login forgot password form-->
+            </div>
+        </div>
+    </div>
+    <!--end::Login-->
+</div>
+
+@if (ViewBag.Error == "Error")
+{
+    <div class="modal fade" id="ModalResult" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dikkat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body" style="height: 100%;">
+                    <p>@ViewBag.Description.Split("Dear")[0]</p>
+                    @if (ViewBag.Description.Split("Dear").Length > 1)
+                    {
+                      <p>Dear @ViewBag.Description.Split("Dear")[1]</p>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary font-weight-bold" data-dismiss="modal">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#ModalResult").modal('show');
+        });
+    </script>
+}
+
+@if (ViewBag.Overdue == "Overdue")
+{
+    <div class="modal fade" id="ModalResult" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dikkat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i aria-hidden="true" class="ki ki-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body" style="height: 100%;">
+                    Vadesi geçmiş borcunuz bulunmaktadır. Ödemenizi yaptıktan sonra ogrencimuhasebesi@halic.edu.tr adresiyle iletişime geçebilirsiniz.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary font-weight-bold" data-dismiss="modal">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#ModalResult").modal('show');
+        });
+    </script>
+}
+

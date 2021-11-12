@@ -1,0 +1,339 @@
+﻿@using NonFactors.Mvc.Grid
+@using KariyerMerkezi.Models
+
+@model IGrid<Etkinlik>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-top:70px" class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Başvuruyu Sil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: inline-block" id="DeleteRecord"></div> adlı kaydı silmek istediğinizden emin misiniz?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">İptal</button>
+                <a id="DeleteBtn" class="btn btn-primary font-weight-bold">Sil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="margin-top:70px">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myLargeModalLabel">Etkinlik Ekle</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label class="control-label">Etkinlik Adı</label>
+                        <input name="Ad" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Başlangıç Tarihi</label>
+                        <input type="datetime-local" name="BaslangicTarihi" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Bitiş Tarihi</label>
+                        <input type="datetime-local" name="BitisTarihi" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Açıklama</label>
+                        <input name="Aciklama" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Resim</label>
+                        <input type="file" name="EtkinlikResim" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <div style="width:25%; display: inline;">
+                            <input style="width: fit-content; display: inline-block;" value="true" id="IsActive" type="checkbox" name="IsActive" class="form-control" /><label>Aktif</label>
+                        </div>
+                        <div style="width:25%; display: inline;">
+                            <input style="width: fit-content; display: inline-block;" value="true" id="Basvuru_Acikmi" type="checkbox" name="Basvuru_Acikmi" class="form-control" /><label>Başvuru Yapılabilir!</label>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Eğitim İçeriği</label>
+                        <input name="EgitimIcerigiHTML" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Grup Açıklaması</label>
+                        <input name="GrupAciklama" class="form-control" />
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Tur</label>
+                        <select name="Tur">
+                            <option value="0">Eğitim</option>
+                            <option value="1">Konferans</option>
+                            <option value="2">Etkinlik</option>
+                            <option value="3">Seminer</option>
+                        </select>
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="rad-body-wrapper rad-nav-min">
+        <div class="container-fluid">
+            <header class="rad-page-title">
+                <span style="display: inline-block">Etkinlikler</span>
+                <button style="background-color: blue; border-color: blue;float:right" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Yeni Etkinlik</button>
+                <a class="btn btn-primary" style="background-color: blue; border-color: blue; float: right; margin-right: 10px" asp-action="ExcelEtkinlik">Excel</a>
+            </header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rad-info-box rad-txt-success">
+                        @(new HtmlGrid<Etkinlik>
+   (Html, Model)
+    .Build(columns =>
+    {
+        //columns.Add(model => "<a href='#' type='button' class='detay btn btn-primary' id='detayModal' data-toggle='modal' data-aday='" + model.ID + "' data-target='#modalGrup'><i class='fa fa-book'></i></a").Titled("Grup").Encoded(false);
+        //columns.Add(model => "<a href='#' type='button' class='detay btn btn-primary' id='detayModal' data-toggle='modal' data-aday='" + model.ID + "' data-target='#modalDetay'><i class='fa fa-book'></i></a").Titled("Detay").Encoded(false);
+
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+    .Attributed(new {id="StudentTable" })
+
+    )
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="modalDetay" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 100px">
+        <div class="modal-content">
+            <button style="margin-top: 20px; margin-right: 20px; text-align: right" type="button" class="close" data-dismiss="modal">&times;</button>
+            <form style="padding: 20px" id="EditForm" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Etkinlik Adı</label>
+                    <input id="Ad" name="Ad" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Başlangıç Tarihi</label>
+                    <input id="BaslangicTarihi" type="datetime-local" name="BaslangicTarihi" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Bitiş Tarihi</label>
+                    <input id="BitisTarihi" type="datetime-local" name="BitisTarihi" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Açıklma</label>
+                    <input id="Aciklama" name="Aciklama" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Resim</label>
+                    <input id="EtkinlikResim" type="file" name="EtkinlikResim" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Eğitim İçeriği</label>
+                    <input id="EgitimIcerigiHTML" name="EgitimIcerigiHTML" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Grup Açıklaması</label>
+                    <input id="GrupAciklama" name="GrupAciklama" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Tur</label>
+                    <select id="Tur" name="Tur">
+                        <option value="0">Eğitim</option>
+                        <option value="1">Konferans</option>
+                        <option value="2">Etkinlik</option>
+                        <option value="3">Seminer</option>
+                    </select>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div style="width:25%; display: inline;">
+                        <input style="width: fit-content; display: inline-block;" value="true" id="IsActive" type="checkbox" name="IsActive" class="form-control" /><label>Aktif</label>
+                    </div>
+                    <div style="width:25%; display: inline;">
+                        <input style="width: fit-content; display: inline-block;" value="true" id="Basvuru_Acikmi" type="checkbox" name="Basvuru_Acikmi" class="form-control" /><label>Başvuru Yapılabilir!</label>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalGrup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="margin-top: 125px">
+        <div class="modal-content">
+            <button style="margin-top: 20px; margin-right: 20px; text-align: right" type="button" class="close" data-dismiss="modal">&times;</button>
+            <form asp-action="GrupCreate" method="post">
+                <div style="padding: 0px 30px; overflow-x: auto">
+                    <div class="form-group row" style="display:none">
+                        <label for="example-date-input" class="col-2 col-form-label">Etkinlik Id</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="EtkinlikID" name="EtkinlikID">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Etkinlik Adı</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="EtkinlikAdı" name="EtkinlikAdı">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Grup Adı</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Ad" name="Ad">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Kontenjan</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Kapasite" name="Kapasite">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Lokasyon</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="Lokasyon" name="Lokasyon">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Başlangıç Tarihi</label>
+                        <div class="col-8">
+                            <input type="datetime-local" name="BaslangicTarihi" id="BaslangicTarihi" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label">Bitiş Tarihi</label>
+                        <div class="col-8">
+                            <input type="datetime-local" name="BitisTarihi" id="BitisTarihi" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div style="width:25%; display: inline;">
+                            <input style="width: fit-content; display: inline-block;" value="true" id="IsActive" type="checkbox" name="IsActive" class="form-control" /><label>Aktif</label>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            <button type="submit" class="btn btn-primary" value="btn" id="btn">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+
+{
+    <script>
+
+
+        var rowData;
+        $("#StudentTable").on("click", "a.detay", function (e) {
+
+            var ID = e.currentTarget.dataset["aday"]; // a elementine tıklandığında a 'nın data-aday properties'ine tanımlı bilgiyi alıyoruz.
+            //console.log(tcnumber);
+            $.ajax({
+                async: false, // senkron şekilde servisden veri cekebilmek için asenkronu kapatıyoruz.
+                method: "GET", // methodun turunu yazıyor. POST methodu kullanılabilir.
+                dataType: "json", //Data gidiş ve geliş türünü belirleyebiliyoruz.
+                url: "getData", //sorgulayacağımız method veya url yi yazıyoruz.
+                data: { ID: ID } // methodumuzun parametresındeki tanım ile birebir olmalı. örneğin tcNo veya Kimlik no değil tc olmalı çünkü controller de methodun parametresi bu şekilde tanımlı
+            }).done(function (resp) {
+                rowData = resp // işlem başarılı bir şekilde tamamlandı ise dönen datayı  globale atıyoruz.
+                document.getElementById("DeleteBtn").href = "EtkinlikDelete?id=" + rowData[0].id;
+            })
+        });
+
+        $("#modalGrup").on("show.bs.modal", function (event) {
+
+            var modal = $(this);
+            modal.find("#EtkinlikID").val(rowData[0].id);
+            modal.find("#EtkinlikAdı").val(rowData[0].ad);
+        });
+
+        $("#modalDelete").on("show.bs.modal", function (event) {
+            document.getElementById("DeleteRecord").innerHTML = rowData[0].ad;
+        });
+
+        $("#modalDetay").on("show.bs.modal", function (event) {
+            document.getElementById("EditForm").action = "Edit?id=" + rowData[0].id;
+            var modal = $(this);
+            modal.find("#Ad").val(rowData[0].ad);
+            modal.find("#BaslangicTarihi").val(rowData[0].baslangicTarihi);
+            modal.find("#BitisTarihi").val(rowData[0].bitisTarihi);
+            modal.find("#Aciklama").val(rowData[0].aciklama);
+            //  modal.find("#EtkinlikResim").val(rowData[0].etkinlikResim);
+            if (rowData[0].isGroup == true) {
+                modal.find("#IsGroup").attr('checked', true)
+            }
+            if (rowData[0].isActive == true) {
+                modal.find("#IsActive").attr('checked', true)
+            }
+            if (rowData[0].basvuru_Acikmi == true) {
+                modal.find("#Basvuru_Acikmi").attr('checked', true)
+            }
+            modal.find("#EgitimIcerigiHTML").val(rowData[0].egitimIcerigiHTML);
+            modal.find("#GrupAciklama").val(rowData[0].grupAciklama);
+            modal.find("#Sira").val(rowData[0].sira);
+            modal.find("#Tur").val(rowData[0].tur);
+            modal.find("#Konferans_Kontenjan").val(rowData[0].konferans_Kontenjan);
+            //  modal.find("#Edit").attr('action', 'Edit/' + rowData[0].id);
+        });
+
+
+
+
+
+    </script>
+
+}

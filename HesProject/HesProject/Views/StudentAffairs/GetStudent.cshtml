@@ -1,0 +1,244 @@
+﻿
+@model HesProject.Models.ViewModels.StudentViewModel
+
+@{
+    Layout = "~/Views/Security/_StudentAffairsMainLayout.cshtml";
+}
+
+
+<div class="d-flex flex-column-fluid" style="display:block !important">
+
+
+
+    <!--end::Hero-->
+    <!--begin::Section-->
+    <div class="container py-8">
+        <div class="row">
+            <div class="col-lg-10 mb-4" style="margin:auto">
+                <!--begin::Callout-->
+                <div class="card card-custom wave wave-animate-slow wave-success mb-8 mb-lg-0" style="background-color: white !important; height: 100%">
+                    <div class="card-body" style="">
+                        <h3 style="text-align: center;">
+                            Öğrenci Sorgulama
+                        </h3>
+                        <div class="d-flex align-items-center p-6" style="padding: 2rem 2.25rem !important;">
+                            <!--begin::Icon-->
+
+                            <div class="d-flex flex-column col-lg-6" style="margin:auto">
+                                <form action="@Url.Action("GetStudent", "Security")" method="POST">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="tc" autocomplete="off" maxlength="11" placeholder="TC/Öğrenci Numarası">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">Sorgula</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--end::Content-->
+                        </div>
+                        <h3 style="text-align:center">@ViewBag.Error</h3>
+
+                        @if (Model != null)
+                        {
+                            @if (Model.ProlizData != null && Model.ProlizData.Count > 0)
+                            {
+
+                                <div class="text-center mb-10">
+                                    <div class="symbol symbol-60 symbol-circle symbol-xl-90">
+                                        @if (Model.ProlizData[0].Picture != null)
+                                        {
+                                            <div class="symbol-label" style="background-image: url('@Model.ProlizData[0].Picture');width: 100px; height: 100px;"></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="symbol-label" style="background-image: url('../hes/avatar.jpg'); width: 100px; height: 100px;"></div>
+                                        }
+
+                                    </div>
+                                    <h4 class="font-weight-bold my-2">@Model.ProlizData[0].Ad @Model.ProlizData[0].Soyad</h4>
+                                    <div class="text-muted mb-2">@Model.ProlizData[0].Departman</div>
+                                </div>
+
+                                <table class="table table-bordered" style="margin: auto; margin-bottom: 20px;">
+                                    <thead>
+                                        <tr>
+                                            <th style="font-weight:bold; width: 50%" scope="col">Fakülte</th>
+                                            <th style="font-weight:bold" scope="col">Bölüm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var item in Model.ProlizData)
+                                        {
+                                            <tr>
+                                                <td>@item.Fakulte</td>
+                                                <td>@item.Bolum</td>
+                                            </tr>
+                                        }
+
+
+
+                                    </tbody>
+                                </table>
+                            }
+                        }
+
+                        @if (Model != null)
+                        {
+                            if (Model.ProlizData != null && Model.ProlizData.Count > 0)
+                            {
+                                <table class="table table-bordered" style="margin: auto; margin-bottom: 20px;">
+
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:50%" scope="col">Hes Kodu</th>
+                                            @if (Model.ProlizData[0].HESKOD != null)
+                                            {
+                                                <td style="color: green">@Model.ProlizData[0].HESKOD</td>
+                                            }
+
+                                            else
+                                            {
+                                                <td style="color:red">@Model.ProlizData[0].durum</td>
+                                            }
+
+                                        </tr>
+                                        <tr>
+                                            <th style="width:50%" scope="col">Risk Durumu</th>
+                                            @if (Model.ProlizData[0].current_health_status == "RISKLESS")
+                                            {
+                                                <td style="color: green">Riskli Değil</td>
+                                            }
+                                            else if (Model.ProlizData[0].current_health_status == "RISKY")
+                                            {
+                                                <td style="color:red">Riskli</td>
+                                            }
+                                            else
+                                            {
+                                                <td style="color:red">@Model.ProlizData[0].durum</td>
+                                            }
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Aşılı Durumu</th>
+                                            @if (Model.ProlizData[0].is_vaccinated == true)
+                                            {
+                                                <td style="color:green">Tüm aşıları tamamlanmıştır.</td>
+                                            }
+                                            else if (Model.ProlizData[0].is_vaccinated == false)
+                                            {
+                                                <td style="color:red">Aşıları tamamlanmamıştır.</td>
+                                            }
+                                            else if (Model.ProlizData[0].current_health_status != null)
+                                            {
+                                                <td style="color:red">HES Uygulamasından bilgilerinin paylaşılmasına izin verilmemeiştir.</td>
+                                            }
+                                            else
+                                            {
+                                                <td style="color:red">Aşı bilgisi bulunamadı.</td>
+
+                                            }
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Geçirilmiş Hastalık</th>
+                                            @if (Model.ProlizData[0].is_immune == true)
+                                            {
+                                                <td style="color:green">Son 6 ayda Covid geçirmiştir.</td>
+                                            }
+                                            else if (Model.ProlizData[0].is_immune == false)
+                                            {
+                                                <td style="color:red">Son 6 ayda Covid geçirmemiştir.</td>
+                                            }
+                                            else if (Model.ProlizData[0].current_health_status != null)
+                                            {
+                                                <td style="color:red">HES uygulamasından bilgilerinin paylaşılmasına izin verilmemeiştir.</td>
+                                            }
+                                            else
+                                            {
+                                                <td style="color:red">Hastalık bilgisi bulunamadı.</td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Son 48 Saat Negatif Test</th>
+                                            @if (Model.ProlizData[0].last_negative_test_date != null)
+                                            {
+                                                <td style="color:green">@Model.ProlizData[0].last_negative_test_date</td>
+                                            }
+                                            else if (Model.ProlizData[0].current_health_status != null)
+                                            {
+                                                <td style="color:red">Son 2 günde PCR testi yaptırmamıştır.</td>
+                                            }
+                                            else
+                                            {
+                                                <td style="color:red">PCR testi bilgisi bulunamadı.</td>
+                                            }
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            }
+                        }
+
+                        @if (Model != null)
+                        {
+                            @if (Model.KimlikKarti != null && Model.KimlikKarti.Count > 0)
+                            {
+                                <table class="table table-bordered" style="margin: auto; margin-bottom: 20px;">
+                                    <thead>
+                                        <tr>
+                                            <th style="font-weight:bold; width:33.333333%" scope="col">Kart ID</th>
+                                            <th style="font-weight: bold; width: 33.333333%" scope="col">Kart Tipi</th>
+                                            <th style="font-weight: bold; width: 33.333333%" scope="col">Kart Durumu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @if (Model.KimlikKarti.Count > 0)
+                                        {
+                                            @foreach (var item in Model.KimlikKarti)
+                                            {
+                                                <tr>
+                                                    <td>@item.KartNo</td>
+                                                    <td>@item.KartTipi</td>
+                                                    @if (item.Durum != "")
+                                                    {
+                                                        <td style="color:red">@item.Durum</td>
+                                                    }
+                                                    else
+                                                    {
+                                                        <td style="color:green">Geçiş Yapabilir</td>
+                                                    }
+
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+
+                                            <tr>
+                                                <td style="color:red">Kişiye ait kart bilgisi bulunamaıştır.</td>
+                                                <td style="color:red">Kişiye ait kart bilgisi bulunamaıştır.</td>
+                                                <td style="color:red">Kişiye ait kart bilgisi bulunamaıştır.</td>
+                                            </tr>
+                                        }
+
+
+
+
+                                    </tbody>
+                                </table>
+                            }
+                        }
+                    </div>
+                </div>
+                <!--end::Callout-->
+            </div>
+        </div>
+    </div>
+    <!--end::Section-->
+    <!--begin::Section-->
+
+</div>

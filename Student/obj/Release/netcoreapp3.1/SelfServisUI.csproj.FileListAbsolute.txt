@@ -1,0 +1,491 @@
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.exe
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.deps.json
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.json
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.dev.json
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.Views.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Net.Http.Extensions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Net.Http.Primitives.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Net.Http.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.Manifest.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.xml
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\scopedcss\bundle\SelfServisUI.styles.css
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.input.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.output.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.RazorCoreGenerate.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Home\App.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\ADPersonInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\EmployeeInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\PersonEmployeeInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\PersonVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Person\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\ADPersonInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\PersonVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentEmployeeInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentNumber.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Student\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CopyComplete
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\SelfServisUI.genruntimeconfig.cache
+C:\Users\muhammetkaya\Desktop\SelfServisUI\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.exe
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.deps.json
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.json
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.dev.json
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.Views.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Net.Http.Extensions.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Net.Http.Primitives.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Net.Http.Json.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.Manifest.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.xml
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\scopedcss\bundle\SelfServisUI.styles.css
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.input.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.output.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.RazorCoreGenerate.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Home\App.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\ADPersonInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\EmployeeInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\PersonEmployeeInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\PersonVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Person\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\ADStudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInformation.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Student\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CopyComplete
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\New folder (12)\obj\Release\netcoreapp3.1\SelfServisUI.genruntimeconfig.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.exe
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.deps.json
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.json
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.dev.json
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.Views.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Net.Http.Extensions.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Net.Http.Primitives.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Net.Http.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.Manifest.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.xml
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\scopedcss\bundle\SelfServisUI.styles.css
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.input.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.output.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorCoreGenerate.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Home\App.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\ADStudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInformation.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CopyComplete
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.genruntimeconfig.cache
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\SelfServisUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_LayoutEn.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayoutEn.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\ADStudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\StudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\StudentInformation.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\SelfServisProject\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\appsettings.Development.json
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\appsettings.json
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.exe
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.deps.json
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.json
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.runtimeconfig.dev.json
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.Views.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Net.Http.Extensions.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Net.Http.Primitives.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Net.Http.Json.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\System.Text.Json.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.AssemblyReference.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfoInputs.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.AssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CoreCompileInputs.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.Manifest.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\staticwebassets\SelfServisUI.StaticWebAssets.xml
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\scopedcss\bundle\SelfServisUI.styles.css
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.input.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.TagHelpers.output.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorCoreGenerate.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Home\App.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_LayoutEn.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayout.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_TokenLayoutEn.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\ADStudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\StudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\StudentInformation.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\StudentEn\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\ADStudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\InfoNotFound.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\PasswordReset.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\PhoneVerification.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\SendSms.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInfo.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\StudentInformation.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Student\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\Token.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cache
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.RazorTargetAssemblyInfo.cs
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.Views.pdb
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.csproj.CopyComplete
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.dll
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.pdb
+C:\Users\muhammetkaya\Desktop\Projeler\Student\obj\Release\netcoreapp3.1\SelfServisUI.genruntimeconfig.cache
